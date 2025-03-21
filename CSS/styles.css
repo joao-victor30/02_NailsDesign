@@ -1,0 +1,264 @@
+/* geral */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 48rem;
+    background: linear-gradient(to bottom, #edb7cf, #fff);
+    font-family: Gwendolyn, sans-serif;
+}
+
+/* cabeçalho */
+#headertitle {
+    margin: 0 auto;
+    border-bottom: 2px solid #000;
+    margin-top: 1rem;
+    border-top: 2px solid #000;
+    height: 12rem;
+    width: 80%;
+    display: flex;
+    position: relative;
+    bottom: -1rem;
+    padding: 1.5rem;
+
+}
+
+#firstname {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 5rem;
+    font-weight: bold;
+
+}
+
+#lastname {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 5rem;
+    position: relative;
+    bottom: 1rem;
+    left: -1rem;
+}
+
+#logo {
+    display: flex;
+    position: relative;
+    left: -22rem;
+    top: -3rem;
+    height: 18rem;
+    opacity: 0.2;
+
+}
+
+#subtitle {
+    display: flex;
+    font-size: 4rem;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    position: relative;
+    left: -36.5rem;
+    bottom: -14rem;
+    line-height: 55px;
+}
+
+
+
+/* Social media */
+.card {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+}
+
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+    position: relative;
+    left: 6.5rem;
+    top: 7.5rem;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+    width: 8rem;
+    position: relative;
+    top: 9rem;
+    padding: 1rem;
+    left: 7.8rem;
+
+
+}
+
+#home-btn,
+#format-btn,
+#decoration-btn {
+    font-size: 1.5rem;
+    margin: .1rem;
+    font-weight: bold;
+    font-family: gwendolyn;
+    border-radius: 5rem;
+    transition: .5s;
+}
+
+.home-btn:hover,
+.format-btn:hover,
+.decoration-btn:hover {
+    background-color: #d62976;
+    color: #fff;
+}
+
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+
+}
+
+
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+
+}
+
+.socialSvg {
+    width: 25px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Seções de formato e decoração */
+#format,
+#decoration {
+    display: block;
+    margin-bottom: 40px;
+    width: 100%;
+    /* Garante que as seções ocupem toda a largura disponível */
+    display: flex;
+    justify-content: center;
+    /* Centraliza o conteúdo na seção */
+    margin-top: 12rem;
+    /* Adiciona mais espaço acima das seções */
+}
+
+/* Containers para os cards */
+#format-container,
+#decoration-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Para mobile, uma coluna por vez */
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+    /* Garante que o container ocupe toda a largura disponível */
+    max-width: 400px;
+    /* Limita a largura máxima dos cards */
+}
+
+/* Card individual */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    /* A largura ocupa todo o espaço disponível */
+    max-width: 200px;
+    /* Limita o tamanho do card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+    /* Garante que o card fique centralizado */
+}
+
+/* Efeito de hover nos cards */
+figure:hover {
+    transform: scale(1.02);
+}
+
+/* Estilo das imagens */
+figure img {
+    width: 70%;
+    /* Reduz o tamanho das imagens no mobile */
+    height: auto;
+    margin-bottom: 5px;
+    border-radius: 20%;
+    /* Adiciona espaço entre a imagem e o título */
+}
+
+/* Estilo do texto abaixo da imagem */
+figcaption {
+    text-align: center;
+    font-size: 1.4em;
+    /* Aumenta o tamanho da legenda */
+    margin-top: 3px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo dos figcaptions */
+#amondoun_nails,
+#bailarin_nails,
+#quadrada_nails,
+#stilleto_nails,
+#baby-boomer,
+#baby-color,
+#glitter,
+#encapsule,
+#france,
+#natural {
+    display: block;
+    font-size: 1.9em;
+    /* Ajuste fino no tamanho da fonte */
+    color: #444;
+
+}

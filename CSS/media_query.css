@@ -1,0 +1,125 @@
+/* CSS para telas maiores que 768px */
+/* CSS para telas maiores que 768px */
+@media (min-width: 768px) {
+
+    /* Reset básico */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(to bottom, #f4c2c2, #fff);
+        font-family: 'Gwendolyn', cursive;
+    }
+
+    .principal-content {
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+        /* Ajuste conforme necessário */
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #firstname,
+    #lastname {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    #logo {
+        width: 100px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    #subtitle {
+        font-size: 1.8rem;
+        margin-top: 10px;
+    }
+
+    /* Ícones das redes sociais */
+    #home {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .card a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background: black;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+
+    .socialSvg {
+        width: 25px;
+        height: 25px;
+        fill: white;
+    }
+
+    /* Botões */
+    button {
+        display: block;
+        width: 80%;
+        max-width: 200px;
+        margin: 10px auto;
+        padding: 10px;
+        font-size: 1.2rem;
+        border: 2px solid black;
+        border-radius: 20px;
+        background: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #f4c2c2;
+    }
+
+    /* Seções */
+    section {
+        display: none;
+        text-align: center;
+    }
+
+    #format-container,
+    #decoration-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    img {
+        width: 120px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    figcaption {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+
+}
